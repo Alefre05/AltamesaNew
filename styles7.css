@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background: url('./imagen/Imagen\ 1.webp') no-repeat center/cover;
+}
+header {
+    background: #4CAF50;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img { 
+    width: 60px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+.allergy-form-section {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .allergy-form-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .allergy-form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+  }
+
+  .allergy-form-section fieldset {
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .allergy-form-section label {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .allergy-form-section input[type="text"],
+  .allergy-form-section input[type="email"],
+  .allergy-form-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .allergy-form-section button {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .allergy-form-section button:hover {
+    background: #4CAF50;
+  }
