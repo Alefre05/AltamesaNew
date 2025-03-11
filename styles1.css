@@ -3,13 +3,18 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 header {
     background: #4CAF50;
+    background-size: cover;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 100px;
+    top: 0;
 }
 
 header img {
@@ -58,4 +63,53 @@ footer {
     padding: 10px;
     background: #333;
     color: white;
+}
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 50px;
+    }
+
+    .destacados {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 480px) {
+    header {
+        height: auto;
+        flex-direction: row-reverse;
+        padding: 10px;
+    }
+
+    header img {
+        width: 50px; /* Reducir el tamaño del logo */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambiar a columna para móviles */
+        align-items: center;
+        gap: 10px; /* Espacio entre elementos del menú */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reducir margen entre elementos */
+    }
+
+    .hero {
+        padding: 30px; /* Reducir el padding */
+        font-size: 0.9em; /* Reducir el tamaño de la fuente */
+    }
+
+    .destacados {
+        padding: 10px; /* Reducir el padding */
+    }
+
+    .plato {
+        width: 90%; /* Ajustar el ancho de los platos */
+        margin: 10px auto; /* Centrar los platos */
+    }
+
+    footer {
+        padding: 15px; /* Ajustar el padding del footer */
+        font-size: 0.9em; /* Reducir el tamaño de la fuente */
+    }
 }
