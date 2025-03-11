@@ -113,3 +113,66 @@ footer {
     background: #333;
     color: white;
 }
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia el menú a columna */
+        gap: 10px; /* Espacio entre elementos del menú */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduce el margen entre elementos */
+    }
+
+    .container {
+        width: 70%; /* Aumenta el ancho del contenedor para tablets */
+    }
+}
+
+/* Media query para móviles (pantallas pequeñas) */
+@media screen and (max-width: 480px) {
+    body {
+        background-size: auto; /* Ajusta el fondo para móviles */
+    }
+
+    header img {
+        width: 50px; /* Reduce el tamaño del logo */
+    }
+
+    nav ul {
+        gap: 8px; /* Reduce el espacio entre elementos del menú */
+    }
+
+    nav ul li a {
+        font-size: 0.9em; /* Reduce el tamaño de la fuente del menú */
+    }
+
+    .container {
+        width: 90%; /* Aumenta el ancho del contenedor para móviles */
+        margin: 20px auto; /* Reduce el margen superior e inferior */
+        padding: 15px; /* Reduce el padding interno */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Reduce el tamaño de la fuente del título */
+    }
+
+    .form-group input {
+        padding: 8px; /* Reduce el padding de los inputs */
+    }
+
+    .form-group button {
+        padding: 8px 16px; /* Reduce el padding del botón */
+        font-size: 14px; /* Reduce el tamaño de la fuente del botón */
+    }
+
+    footer {
+        padding: 15px; /* Ajusta el padding del footer */
+        font-size: 0.9em; /* Reduce el tamaño de la fuente del footer */
+    }
+}
