@@ -4,20 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles6.css">
 </head>
 <body>
     <header>
+        <img src="./imagen/ALTAMESA(1).png" alt="Imagen izquierda" width="80">
         <nav>
             <ul>
                 <li><a href="index.html">Home </a></li>
                 <li><a href="inicioSesion.html">Inicio Sesión</a></li>
                 <li><a href="comidas.html">Comidas</a></li>
                 <li><a href="alergenos.html">Alergenos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="suscripción.html">Suscripción</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+                <li><a href="suscripcion.html">Suscripción</a></li>
             </ul>
         </nav>
+        <img src="./imagen/ALTAMESA(1).png" alt="Imagen derecha" width="80">
     </header>
+    <section class="contact-section">
+        <h2>Contacta con Nosotros</h2>
+        <p>Estamos aquí para ayudarte. Envíanos un mensaje y te responderemos lo antes posible.</p>
+        
+        <form action="#" method="post">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="subject">Asunto:</label>
+          <input type="text" id="subject" name="subject" required>
+          
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          
+          <button type="submit">Enviar Mensaje</button>
+        </form>
+      </section>
+    <footer>
+        <p>&copy; 2025 Altamesa. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
