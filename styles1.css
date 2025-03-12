@@ -41,17 +41,17 @@ nav a {
     font-family: Barlow static;
 }
 .logo {
-    width: 150px; /* Ajusta el tamaño según tus necesidades */
-    height: 150px; /* Asegúrate de que el ancho y el alto sean iguales */
-    border-radius: 50%; /* Hace que la imagen sea redonda */
-    overflow: hidden; /* Asegura que la imagen no se desborde del círculo */
-    border: 3px solid #097D4C; /* Borde opcional */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 3px solid #097D4C; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 .logo img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+    object-fit: cover; 
 }
 nav a:hover {
     text-decoration: underline;
@@ -101,47 +101,48 @@ footer {
     padding: 10px 20px;
     bottom: 0;
     width: 100%;
-}@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
     .hero h1 {
-        font-size: 36px; /* Reduce el tamaño del título en pantallas pequeñas */
+        font-size: 36px;
         padding: 15px;
     }
     nav ul {
-        flex-direction: column; /* Cambia el menú a columna */
-        gap: 10px; /* Espacio entre elementos del menú */
+        flex-direction: column;
+        gap: 10px;
     }
 
     nav ul li {
-        margin: 5px 0; /* Reduce el margen entre elementos */
+        margin: 5px 0;
     }
     .content p {
-        font-size: 16px; /* Reduce el tamaño del texto en pantallas pequeñas */
+        font-size: 16px;
         padding: 15px;
     }
     .logo {
-        width: 120px; /* Reduce el tamaño del logo en pantallas pequeñas */
+        width: 120px; 
         height: 120px;
     }
 }
 
 @media (max-width: 480px) {
     .hero h1 {
-        font-size: 24px; /* Reduce aún más el tamaño del título en pantallas muy pequeñas */
+        font-size: 24px; 
         padding: 10px;
     }
     nav ul {
-        gap: 8px; /* Reduce el espacio entre elementos del menú */
+        gap: 8px; 
     }
 
     nav ul li a {
-        font-size: 0.9em; /* Reduce el tamaño de la fuente del menú */
+        font-size: 0.9em; 
     }
     .content p {
-        font-size: 14px; /* Reduce el tamaño del texto en pantallas muy pequeñas */
+        font-size: 14px; 
         padding: 10px;
     }
     .logo {
-        width: 100px; /* Reduce el tamaño del logo en pantallas muy pequeñas */
+        width: 100px; 
         height: 100px;
     }
 }
