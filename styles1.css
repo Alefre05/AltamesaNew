@@ -125,6 +125,9 @@ footer {
         width: 120px; 
         height: 120px;
     }
+    body{
+        background-size: auto, auto; 
+    }
 }
 
 @media (max-width: 480px) {
