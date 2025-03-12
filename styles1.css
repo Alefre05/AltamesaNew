@@ -1,115 +1,132 @@
 body {
-    font-family: Arial, sans-serif;
+            
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    overflow-x: hidden;
+    background-color: #fff7da;
+    color: #333;
+    background-image: url('./imagen/sandwich-2977251_1280.jpg'); /* Cambia esto por la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    font-family: Barlow static;
 }
 header {
-    background: #4CAF50;
-    background-size: cover;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    top: 0;
+    background-color: #097D4C;
+    color: #FF914D;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: Barlow static;
 }
-
-header img {
-    width: 60px; 
-    height: auto;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+nav {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
+    background-color: #444;
+    padding: 10px;
+    font-family: Barlow static;
 }
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
     color: white;
     text-decoration: none;
+    margin: 0 15px;
+    font-size: 12px;
+    font-family: Barlow static;
+}
+.logo {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: 150px; /* Asegúrate de que el ancho y el alto sean iguales */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    overflow: hidden; /* Asegura que la imagen no se desborde del círculo */
+    border: 3px solid #097D4C; /* Borde opcional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+}
+nav a:hover {
+    text-decoration: underline;
+    font-family: Barlow static;
 }
 .hero {
-    text-align: center;
-    padding: 100px;
-    background: url('./imagen/comida5m.jpg') no-repeat center/cover;
-    color: rgb(0, 0, 0);
-}
-.destacados {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-.plato {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
+    color: white;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.hero h1 {
+    font-size: 30px;
+    background-color: #fff7da;
+    padding: 20px;
+    border-radius: 10px;
+    color: #333;
+    font-family: Barlow static;
+}
+.content {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.content p {
+    font-size: 12px;
+    line-height: 1.6;
+    border-radius: 10px;
+    background-color: #fff7da;
+    padding: 20px;
+    color: #333;
+    font-family: Barlow static;
 }
 footer {
+    background-color: #FF914D;
+    color: #097D4C;
     text-align: center;
-    padding: 10px;
-    background: #333;
-    color: white;
-}
-@media screen and (max-width: 768px) {
-    .hero {
-        padding: 50px;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px; /* Reduce el tamaño del título en pantallas pequeñas */
+        padding: 15px;
     }
+    nav a {
+        font-size: 16px; /* Reduce el tamaño de los enlaces en pantallas pequeñas */
+        margin: 0 10px;
+    }
+    .content p {
+        font-size: 16px; /* Reduce el tamaño del texto en pantallas pequeñas */
+        padding: 15px;
+    }
+    .logo {
+        width: 120px; /* Reduce el tamaño del logo en pantallas pequeñas */
+        height: 120px;
+    }
+}
 
-    .destacados {
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 480px) {
-    header {
-        height: auto;
-        flex-direction: row-reverse;
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px; /* Reduce aún más el tamaño del título en pantallas muy pequeñas */
         padding: 10px;
     }
-
-    header img {
-        width: 50px; /* Reducir el tamaño del logo */
+    nav a {
+        font-size: 14px; /* Reduce el tamaño de los enlaces en pantallas muy pequeñas */
+        margin: 0 5px;
     }
-
-    nav ul {
-        flex-direction: column; /* Cambiar a columna para móviles */
-        align-items: center;
-        gap: 10px; /* Espacio entre elementos del menú */
+    .content p {
+        font-size: 14px; /* Reduce el tamaño del texto en pantallas muy pequeñas */
+        padding: 10px;
     }
-
-    nav ul li {
-        margin: 5px 0; /* Reducir margen entre elementos */
-    }
-
-    .hero {
-        padding: 30px; /* Reducir el padding */
-        font-size: 0.9em; /* Reducir el tamaño de la fuente */
-    }
-
-    .destacados {
-        padding: 10px; /* Reducir el padding */
-    }
-
-    .plato {
-        width: 90%; /* Ajustar el ancho de los platos */
-        margin: 10px auto; /* Centrar los platos */
-    }
-
-    footer {
-        padding: 15px; /* Ajustar el padding del footer */
-        font-size: 0.9em; /* Reducir el tamaño de la fuente */
+    .logo {
+        width: 100px; /* Reduce el tamaño del logo en pantallas muy pequeñas */
+        height: 100px;
     }
 }
