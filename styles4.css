@@ -58,10 +58,12 @@ nav a:hover {
     font-family: Barlow static;
 }
 footer {
+    background-color: #FF914D;
+    color: #097D4C;
     text-align: center;
-    padding: 10px;
-    background: #333;
-    color: white;
+    padding: 10px 20px;
+    bottom: 0;
+    width: 100%;
 }
 
 .container {
