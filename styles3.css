@@ -60,7 +60,7 @@ nav a:hover {
 .container {
     width: 50%;
     margin: 50px auto;
-    background-color: white;
+    background-color: #fff7da;
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 8px;

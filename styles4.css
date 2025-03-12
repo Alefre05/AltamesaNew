@@ -69,10 +69,29 @@ footer {
 .container {
     width: 300px;
     margin: 100px auto;
-    background-color: white;
+    background-color: #fff7da;
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+}
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    border-radius: 10px;
+    background-color: #fff7da;
+    padding: 20px;
+    color: #333;
+    font-family: Barlow static;
 }
 
 h2 {
@@ -183,10 +202,5 @@ h2 {
         padding: 8px 16px; 
         font-size: 14px; 
     }
-    footer {
-        margin-top: auto;
-        height: 55px;
-        font-size: 0.9em;
-        margin-bottom: 0;
-    }
+    
 }

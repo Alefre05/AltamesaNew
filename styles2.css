@@ -12,7 +12,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     padding: 0;
-    font-family: Barlow static; 
+    font-family: Barlow static;
+    background-image: url('./imagen/sandwich-2977251.jpg');  
 }
 header {
     
@@ -69,6 +70,7 @@ nav a:hover {
     padding: 10px;
     text-align: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff7da;
 }
 .card img {
     width: 100%;
