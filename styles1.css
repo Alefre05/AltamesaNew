@@ -13,8 +13,10 @@ body {
     background-repeat: no-repeat;
     padding: 0;
     font-family: Barlow static;
-    background-image: url('./imagen/sandwich-2977251.jpg');  
+    background-image: url('./imagen/sandwich-2977251.jpg'); 
+    background-size: 100%; 
 }
+
 header {
     
     background-color: #097D4C;
