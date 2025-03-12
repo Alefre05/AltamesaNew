@@ -125,9 +125,6 @@ footer {
         width: 120px; 
         height: 120px;
     }
-    body{
-        background-size: auto, auto; 
-    }
 }
 
 @media (max-width: 480px) {
@@ -149,8 +146,5 @@ footer {
     .logo {
         width: 100px; 
         height: 100px;
-    }
-    body{
-        background-size: auto, auto; 
     }
 }
