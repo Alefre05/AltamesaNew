@@ -106,9 +106,13 @@ footer {
         font-size: 36px; /* Reduce el tamaño del título en pantallas pequeñas */
         padding: 15px;
     }
-    nav a {
-        
-        margin: 0 10px;
+    nav ul {
+        flex-direction: column; /* Cambia el menú a columna */
+        gap: 10px; /* Espacio entre elementos del menú */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduce el margen entre elementos */
     }
     .content p {
         font-size: 16px; /* Reduce el tamaño del texto en pantallas pequeñas */
@@ -125,9 +129,12 @@ footer {
         font-size: 24px; /* Reduce aún más el tamaño del título en pantallas muy pequeñas */
         padding: 10px;
     }
-    nav a {
-        font-size: 14px; /* Reduce el tamaño de los enlaces en pantallas muy pequeñas */
-        margin: 0 5px;
+    nav ul {
+        gap: 8px; /* Reduce el espacio entre elementos del menú */
+    }
+
+    nav ul li a {
+        font-size: 0.9em; /* Reduce el tamaño de la fuente del menú */
     }
     .content p {
         font-size: 14px; /* Reduce el tamaño del texto en pantallas muy pequeñas */
