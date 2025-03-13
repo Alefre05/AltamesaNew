@@ -170,14 +170,4 @@ footer {
         padding: 5px; 
         flex-direction: column;
     }
-
-    .card {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-        opacity: 0;
-        transform: translateY(-10px);
-    }
 }
