@@ -121,9 +121,14 @@ footer {
   .allergy-form-section button:hover {
     background: #4CAF50;
   }
+  #menu-toggle {
+    display: none; /* Ocultar el botón en pantallas grandes */
+    visibility: hidden;
+}
   
   @media (max-width: 768px) {
     #menu-toggle {
+        visibility: visible;
         display: block; /* Mostrar el botón en móviles */
         background: none;
         border: none;

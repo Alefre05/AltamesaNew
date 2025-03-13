@@ -104,10 +104,15 @@ footer {
     bottom: 0;
     width: 100%;
 }
+#menu-toggle {
+    display: none; /* Ocultar el botón en pantallas grandes */
+    visibility: hidden;
+}
 
 /* Estilos para móviles */
 @media (max-width: 768px) {
     #menu-toggle {
+        visibility: visible;
         display: block; /* Mostrar el botón en móviles */
         background: none;
         border: none;
