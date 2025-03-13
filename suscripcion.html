@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>ALTAMESA</h1>
         <img src="./imagen/ALTAMESA(1).png" alt="Logo Resto Grill" class="logo">
-    
+        <!-- Botón de menú desplegable con ícono de FontAwesome -->
+        <button id="menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i> <!-- Ícono de hamburguesa -->
+        </button>
     </header>
     <nav>
         <a href="index.html">Home </a>
@@ -78,5 +82,17 @@
     <footer>
         <p>&copy; 2025 Altamesa. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        // JavaScript para manejar el menú desplegable
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const navLinks = document.getElementById('nav-links');
+
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('active'); // Alternar la clase 'active'
+                menuToggle.classList.toggle('open'); // Cambiar ícono a "X"
+            });
+        });
+    </script>
 </body>
 </html>
