@@ -219,4 +219,25 @@ h2 {
     nav a:hover {
         background-color: #097D4C; /* Efecto hover en móviles */
     }
+    .footer-main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-links, .footer-contact, .footer-social {
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-bottom p {
+        margin-bottom: 10px;
+    }
 }
