@@ -6,6 +6,7 @@
     <title>ALTAMESA</title>
     <link rel="stylesheet" href="styles4.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="./JavaSript/Desplegable.js" defer></script>
 </head>
 <body>
     <header>
@@ -53,17 +54,5 @@
     <footer>
         <p>&copy; 2025 Altamesa. Todos los derechos reservados.</p>
     </footer>
-    <script>
-        // JavaScript para manejar el menú desplegable
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.getElementById('menu-toggle');
-            const navLinks = document.getElementById('nav-links');
-
-            menuToggle.addEventListener('click', function () {
-                navLinks.classList.toggle('active'); // Alternar la clase 'active'
-                menuToggle.classList.toggle('open'); // Cambiar ícono a "X"
-            });
-        });
-    </script>
 </body>
 </html>
