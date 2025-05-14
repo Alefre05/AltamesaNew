@@ -172,6 +172,10 @@ footer {
 #menu-toggle:hover {
     transform: scale(1.1);
 }
+#menu-toggle {
+    display: none; /* Ocultar el botón en pantallas grandes */
+    visibility: hidden;
+}
 /* Footer Styles */
 .footer-container {
     max-width: 1200px;
@@ -252,6 +256,26 @@ footer {
 
     nav {
         top: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-toggle {
+        visibility: visible;
+        display: block; /* Mostrar el botón en móviles */
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    #menu-toggle.open {
+        transform: rotate(90deg); /* Animación al abrir el menú */
+    }
+
+    nav {
         flex-direction: column;
         align-items: center;
         padding: 0;
@@ -364,6 +388,34 @@ footer {
         height: 40px;
     }
     
+    #nav-links {
+        display: none; /* Ocultar la lista de enlaces en móviles */
+        flex-direction: column;
+        background-color: #444;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    #nav-links.active {
+        display: flex; /* Mostrar la lista cuando está activa */
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 14px;
+        padding: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #097D4C; /* Efecto hover en móviles */
+    }
     .footer-main {
         flex-direction: column;
         text-align: center;

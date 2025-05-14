@@ -117,4 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.classList.toggle('active');
         });
     }
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
