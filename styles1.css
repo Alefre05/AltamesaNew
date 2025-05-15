@@ -627,6 +627,20 @@ button.cerrar-btn:hover {
     .footer-bottom p {
         margin-bottom: 10px;
     }
+
+    .popup-contenido {
+    padding: 25px;
+    max-width: 85%;
+  }
+  
+  .popup-contenido h2 {
+    font-size: 20px;
+  }
+  
+  .popup-contenido button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
 
 @keyframes fadeInRight {
