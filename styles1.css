@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 /* Estilos para el menú desplegable mejorado */
-=======
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
 * {
     margin: 0;
     padding: 0;
@@ -16,11 +13,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 220px; /* Espacio para header y nav fijos */
-<<<<<<< HEAD
     font-family: 'Barlow static', sans-serif;
-=======
-    font-family: 'Barlow static';
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
 }
 
 header {
@@ -28,11 +21,7 @@ header {
     color: #FF914D;
     padding: 10px 20px;
     text-align: center;
-<<<<<<< HEAD
     font-family: 'Barlow static', sans-serif;
-=======
-    font-family: 'Barlow static';
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -67,11 +56,7 @@ nav {
     justify-content: center;
     background-color: #444;
     padding: 10px;
-<<<<<<< HEAD
     font-family: 'Barlow static', sans-serif;
-=======
-    font-family: 'Barlow static';
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
     position: fixed;
     top: 170px; /* Altura del header */
     left: 0;
@@ -79,25 +64,18 @@ nav {
     z-index: 1000;
 }
 
-<<<<<<< HEAD
 #nav-links {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-=======
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
 nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
     font-size: 12px;
-<<<<<<< HEAD
     font-family: 'Barlow static', sans-serif;
-=======
-    font-family: 'Barlow static';
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
 }
 
 nav a:hover {
@@ -121,11 +99,7 @@ nav a:hover {
     padding: 20px;
     border-radius: 10px;
     color: #333;
-<<<<<<< HEAD
     font-family: 'Barlow static', sans-serif;
-=======
-    font-family: 'Barlow static';
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
 }
 
 .hero p {
@@ -135,11 +109,7 @@ nav a:hover {
     background-color: #fff7da;
     padding: 20px;
     color: #333;
-<<<<<<< HEAD
     font-family: 'Barlow static', sans-serif;
-=======
-    font-family: 'Barlow static';
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
 }
 
 footer {
@@ -150,7 +120,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-<<<<<<< HEAD
 /* Botón de menú */
 #menu-toggle {
     display: none; /* Oculto por defecto en escritorio */
@@ -166,24 +135,6 @@ footer {
     transform: scale(1.1);
 }
 
-=======
-#menu-toggle {
-    display: none; /* Ocultar el botón por defecto */
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    overflow: hidden;
-}
-#nav-links {
-    display: flex; /* Mostrar la lista de enlaces por defecto */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
 /* Estilos específicos para el slider de productos */
 .featured-products {
     background-color: #fff7da;
@@ -361,10 +312,6 @@ footer {
     justify-content: space-between;
     font-size: 14px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
 /* Responsive Breakpoints */
 @media (max-width: 768px) {
     body {
@@ -375,7 +322,6 @@ footer {
         flex-wrap: wrap;
         justify-content: space-between;
     }
-<<<<<<< HEAD
     /* Añadido espacio a la derecha para evitar superposición */
     header h1 {
         margin-left: 100px;
@@ -388,18 +334,6 @@ footer {
         position: absolute; /* Posicionamiento absoluto */
         left: 15px; /* Distancia desde el borde izquierdo */
         top: 15px; /* Distancia desde el borde superior */
-=======
-
-    .logo {
-        width: 100px;
-        height: 100px;
-    }
-
-    #menu-toggle {
-        display: block;
-        order: 3;
-        width: 50px;
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
     }
 
     nav {
@@ -409,7 +343,6 @@ footer {
         padding: 0;
     }
 
-<<<<<<< HEAD
     #menu-toggle {
         display: block;
         position: absolute;
@@ -475,56 +408,20 @@ footer {
     #nav-links.show a:nth-child(3) { animation-delay: 0.3s; }
     #nav-links.show a:nth-child(4) { animation-delay: 0.4s; }
     #nav-links.show a:nth-child(5) { animation-delay: 0.5s; }
-=======
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #444;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    nav li {
-        width: 100%;
-        text-align: center;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    nav a:hover {
-        background-color: #097D4C;
-    }
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
 
     .product-slider {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-<<<<<<< HEAD
         height: 450px;
-=======
-        height: 450px;  /* Altura ajustada para móviles */
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
         width: 100%;
         overflow: hidden;
     }
 
     .product-card {
         position: absolute;
-<<<<<<< HEAD
         width: 280px;
-=======
-        width: 280px;  /* Ancho ajustado para móviles */
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
         height: 400px;
         background-color: white;
         border-radius: 10px;
@@ -536,18 +433,12 @@ footer {
 
     .slider-controls {
         position: absolute;
-<<<<<<< HEAD
         bottom: 10px;
         top: auto;
-=======
-        bottom: 10px;  /* Cambiar posición a la parte inferior */
-        top: auto;     /* Anular top:50% */
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
         left: 0;
         right: 0;
         display: flex;
         justify-content: center;
-<<<<<<< HEAD
         gap: 40px;
         padding: 0;
         z-index: 10;
@@ -555,14 +446,6 @@ footer {
     
     .slider-controls button {
         background-color: rgba(9, 125, 76, 0.9);
-=======
-        gap: 40px;     /* Espacio entre botones */
-        padding: 0;
-        z-index: 10;
-    }
-    .slider-controls button {
-        background-color: rgba(9, 125, 76, 0.9);  /* Más opaco para mejor visibilidad */
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
         width: 40px;
         height: 40px;
     }
@@ -589,7 +472,6 @@ footer {
         margin-bottom: 10px;
     }
 }
-<<<<<<< HEAD
 
 @keyframes fadeInRight {
     from {
@@ -601,5 +483,3 @@ footer {
         transform: translateX(0);
     }
 }
-=======
->>>>>>> 47eb2c331d76493b5333a3a521fb879a7549cbbe
