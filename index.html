@@ -106,6 +106,8 @@
     </div>
 </section>
 
+
+
     <footer>
     <div class="footer-container">
         <div class="footer-main">
@@ -148,5 +150,39 @@
         </div>
     </div>
 </footer>
+<!-- Popup de suscripción mejorado para ALTAMESA -->
+<div id="popup">
+  <div class="popup-contenido">
+    <!-- Logo de ALTAMESA -->
+    <img src="./imagen/ALTAMESA(1) (1).png" alt="Logo ALTAMESA">
+
+    <!-- Título atractivo -->
+    <h2>¡Únete a la experiencia ALTAMESA!</h2>
+
+    <!-- Descripción personalizada -->
+    <p>Suscríbete a nuestra newsletter y descubre nuestras recetas exclusivas, promociones y eventos gastronómicos.</p>
+
+    <!-- Campo de correo mejorado -->
+    <input type="email" id="correo" placeholder="Tu correo electrónico" autocomplete="email">
+
+    <!-- Checkbox de cookies con mejor diseño -->
+    <label class="checkbox-container">
+      <input type="checkbox" id="cookies"> 
+      Acepto las cookies y la política de privacidad
+    </label>
+
+    <!-- Mensaje de validación con mejor diseño -->
+    <div id="mensaje"></div>
+
+    <!-- Botones con estilos mejorados -->
+    <div class="button-container">
+      <button class="aceptar-btn" onclick="aceptar()">Suscribirme</button>
+      <button class="cerrar-btn" onclick="cerrarPopup()">Ahora no</button>
+    </div>
+  </div>
+</div>
+
+<!-- Incluir el script de JavaScript -->
+<script src="./JavaSript/Popup.js"></script>
 </body>
 </html>

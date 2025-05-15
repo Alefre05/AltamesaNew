@@ -312,6 +312,162 @@ footer {
     justify-content: space-between;
     font-size: 14px;
 }
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: 'Barlow static', sans-serif;
+}
+
+.popup-contenido {
+  background: #fff7da; /* Color de fondo que coincide con tu web */
+  padding: 35px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 3px solid #097D4C; /* Borde verde como tu logo */
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+.popup-contenido.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popup-contenido img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #097D4C;
+  object-fit: cover;
+}
+
+.popup-contenido h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #097D4C; /* Verde ALTAMESA */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.popup-contenido p {
+  font-size: 16px;
+  color: #444;
+  margin: 15px 0;
+  line-height: 1.4;
+}
+
+.popup-contenido input[type="email"] {
+  width: 90%;
+  padding: 12px 15px;
+  margin: 15px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.popup-contenido input[type="email"]:focus {
+  border-color: #097D4C;
+}
+
+.popup-contenido .checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.popup-contenido input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  accent-color: #097D4C; /* Color del checkbox al marcarlo */
+}
+
+.popup-contenido label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  font-size: 15px;
+  color: #444;
+  cursor: pointer;
+}
+
+.popup-contenido .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.popup-contenido button {
+  padding: 12px 25px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.aceptar-btn {
+  background-color: #097D4C; /* Verde ALTAMESA */
+  color: white;
+}
+
+button.aceptar-btn:hover {
+  background-color: #076b41;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(9, 125, 76, 0.3);
+}
+
+button.cerrar-btn {
+  background-color: #FF914D; /* Naranja ALTAMESA */
+  color: white;
+}
+
+button.cerrar-btn:hover {
+  background-color: #e8803c;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 145, 77, 0.3);
+}
+
+#mensaje {
+  font-weight: bold;
+  margin: 15px 0;
+  min-height: 24px;
+  transition: opacity 0.3s;
+  font-size: 15px;
+}
+
+#mensaje.ok {
+  color: #097D4C;
+  background-color: rgba(9, 125, 76, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#mensaje.error {
+  color: #d9534f;
+  background-color: rgba(217, 83, 79, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+}
 /* Responsive Breakpoints */
 @media (max-width: 768px) {
     body {
