@@ -388,34 +388,6 @@ footer {
         height: 40px;
     }
     
-    #nav-links {
-        display: none; /* Ocultar la lista de enlaces en móviles */
-        flex-direction: column;
-        background-color: #444;
-        width: 100%;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-
-    #nav-links.active {
-        display: flex; /* Mostrar la lista cuando está activa */
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    nav a {
-        margin: 10px 0;
-        font-size: 14px;
-        padding: 10px;
-        transition: background-color 0.3s ease;
-    }
-
-    nav a:hover {
-        background-color: #097D4C; /* Efecto hover en móviles */
-    }
     .footer-main {
         flex-direction: column;
         text-align: center;
