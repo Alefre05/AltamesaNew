@@ -74,82 +74,12 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
-.container {
-    width: 50%;
-    margin: 50px auto;
-    background-color: #444;
-    padding: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    color: white;
-}
-.container h2 {
-    margin-bottom: 20px;
-    color: white;
-}
-
 h2 {
     text-align: center;
     color: #000000;
 }
 
-.plan {
-    margin-bottom: 20px;
-}
 
-.plan label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.plan input[type="radio"] {
-    margin-right: 10px;
-}
-
-.payment-methods {
-    margin: 20px 0;
-}
-
-.payment-methods label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.payment-methods input[type="radio"] {
-    margin-right: 10px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #000000;
-    border-radius: 4px;
-}
-
-.form-group button {
-    background-color: #49b84c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-    width: 100%;
-    font-size: 16px;
-}
-
-.form-group button:hover {
-    background-color: #45a049;
-}
 footer {
     background-color: #FF914D;
     color: #097D4C;

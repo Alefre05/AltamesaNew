@@ -82,63 +82,107 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Estilos para el formulario de alergias */
 .allergy-form-section {
-    width: 50%;
-    margin: 20px auto;
-    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
     background: #444;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     color: white;
-  }
+    transition: all 0.3s ease;
+}
 
-  .allergy-form-section h2 {
-    color: white;
-    margin-bottom: 10px;
-  }
+.allergy-form-section h2 {
+    color: #FF914D;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
 
-  .allergy-form-section form {
+.allergy-form-section p {
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+.allergy-form-section form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     text-align: left;
-  }
+}
 
-  .allergy-form-section fieldset {
-    border: 1px solid #000000;
-    padding: 10px;
-    border-radius: 4px;
-  }
+.allergy-form-section fieldset {
+    border: 1px solid #097D4C;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
 
-  .allergy-form-section label {
+.allergy-form-section legend {
+    color: #FF914D;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.allergy-form-section label {
     display: block;
-    margin: 5px 0;
-  }
+    margin: 8px 0;
+    transition: all 0.2s ease;
+}
 
-  .allergy-form-section input[type="text"],
-  .allergy-form-section input[type="email"],
-  .allergy-form-section textarea {
+.allergy-form-section input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #097D4C;
+    transform: scale(1.2);
+}
+
+.allergy-form-section input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+.allergy-form-section input[type="text"],
+.allergy-form-section input[type="email"],
+.allergy-form-section textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-
-  .allergy-form-section button {
-    background: #4CAF50;
-    color: white;
     padding: 12px;
+    border: 2px solid #097D4C;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+.allergy-form-section input[type="text"]:focus,
+.allergy-form-section input[type="email"]:focus,
+.allergy-form-section textarea:focus {
+    border-color: #FF914D;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 145, 77, 0.5);
+}
+
+.allergy-form-section button {
+    background: #097D4C;
+    color: white;
+    padding: 14px;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-  }
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
 
-  .allergy-form-section button:hover {
-    background: #4CAF50;
-  }
+.allergy-form-section button:hover {
+    background: #FF914D;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 /* Botón de menú */
 #menu-toggle {
     display: none; /* Oculto por defecto en escritorio */
@@ -238,6 +282,23 @@ footer {
 
     nav {
         top: 120px;
+    }
+    .allergy-form-section {
+        width: 95%;
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+    
+    .allergy-form-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .allergy-form-section fieldset {
+        padding: 10px;
+    }
+    
+    .allergy-form-section label {
+        font-size: 0.9rem;
     }
 }
 
